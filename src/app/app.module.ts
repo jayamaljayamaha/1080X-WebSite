@@ -7,18 +7,26 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SliderComponent } from './slider/slider.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import {MatProgressBarModule} from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicesComponent } from './services/services.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     SliderComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    MatProgressBarModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
